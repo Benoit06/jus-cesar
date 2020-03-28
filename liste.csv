@@ -1,23 +1,23 @@
 brand,name,full_name,original_price,price,category,front_picture,back_picture
-Audi,RS3,Audi RS3,$100 000,$120 000,Importation,,
-BMW,e65,BMW e65,$50 000,$60 000,Importation,,
-Bugatti,Chiron,Bugatti Chiron,$1 000 000,$1 200 000,Importation,,
-BMW,M3 e30,BMW M3 e30,$40 000,$48 000,Importation,,
-BMW,x5,BMW x5,$100 000,$120 000,Importation,,
-Ferrari,F60,Ferrari F60,$300 000,$360 000,Importation,,
-Ferrari,F430s,Ferrari F430s,$420 000,$504 000,Importation,,
-Ferrari,F458spc,Ferrari F458spc,$450 000,$540 000,Importation,,
-Ferrari,Fct,Ferrari Fct,$450 000,$540 000,Importation,,
-Ferrari,F512tr,Ferrari F512tr,$600 000,$720 000,Importation,,
-Lamborghini,Huracan Performante,Lamborghini Huracan Performante,$600 000,$720 000,Importation,,
-Mitsubishi,Lancer Evolution 10,Mitsubishi Lancer Evolution 10,$90 000,$108 000,Importation,,
-Nissan,370z,Nissan 370z,$150 000,$180 000,Importation,,
-Porsche,Boxter 718 s,Porsche  Boxter 718 s,$350 000,$420 000,Importation,,
-Renault,Clio 2,Renault Clio 2,$40 000,$48 000,Importation,,
-Renault,Kangoo,Renault Kangoo,$10 000,$12 000,Importation,,
-Subaru,Brz,Subaru Brz,$70 000,$84 000,Importation,,
-Subaru,Impreza wrx,Subaru Impreza wrx,$100 000,$120 000,Importation,,
-Tesla,Model 3,Tesla Model 3,$500 000,$600 000,Importation,,
+Audi,RS3,Audi RS3,$100 000,$120 000,Importations,AudiRS3 Avant,AudiRS3 Arriere
+BMW,e65,BMW e65,$50 000,$60 000,Importations,BMWE65 Avant,BMWE65 Arriere
+Bugatti,Chiron,Bugatti Chiron,$1 000 000,$1 200 000,Importations,BugattiChiron Avant,BugattiChiron Arriere
+BMW,M3 e30,BMW M3 e30,$40 000,$48 000,Importations,BMWM3E30 Avant,BMWM3E30 Arriere
+BMW,x5,BMW x5,$100 000,$120 000,Importations,BMWX5 Avant,BMWX5 Arriere
+Ferrari,F60,Ferrari F60,$300 000,$360 000,Importations,FerrariF60 Avant,FerrariF60 Arriere
+Ferrari,F430s,Ferrari F430s,$420 000,$504 000,Importations,FerrariF430s Avant,FerrariF430s Arriere
+Ferrari,F458spc,Ferrari F458spc,$450 000,$540 000,Importations,FerrariF458spc Avant,FerrariF458spc Arriere
+Ferrari,California T,Ferrari Fct,$450 000,$540 000,Importations,FerrariFct Avant,FerrariFct Arriere
+Ferrari,F512tr,Ferrari F512tr,$600 000,$720 000,Importations,FerrariF512tr Avant,FerrariF512tr Arriere
+Lamborghini,Huracan Performante,Lamborghini Huracan Performante,$600 000,$720 000,Importations,LamborghiniHuracan Avant,LamborghiniHuracan Arriere
+Mitsubishi,Lancer Evolution 10,Mitsubishi Lancer Evolution 10,$90 000,$108 000,Importations,MitsubishiLancerEvo10 Avant,MitsubishiLancerEvo10 Arriere
+Nissan,370z,Nissan 370z,$150 000,$180 000,Importations,Nissan370z Avant,Nissan370z Arriere
+Porsche,Boxter 718 s,Porsche  Boxter 718 s,$350 000,$420 000,Importations,PorscheBoxerS718 Avant,PorscheBoxerS718 Arriere
+Renault,Clio 2,Renault Clio 2,$40 000,$48 000,Importations,RenaultClio2RS Avant,RenaultClio2RS Arriere
+Renault,Kangoo,Renault Kangoo,$10 000,$12 000,Importations,RenaultKangoo Avant,RenaultKangoo Arriere
+Subaru,Brz,Subaru Brz,$70 000,$84 000,Importations,SubaruBrz Avant,SubaruBrz Arriere
+Subaru,Impreza wrx,Subaru Impreza wrx,$100 000,$120 000,Importations,SubaruImpreza Avant,SubaruImpreza Arriere
+Tesla,Model 3,Tesla Model 3,$500 000,$600 000,Importations,TeslaModel3 Avant,TeslaModel3 Arriere
 Dinka,Blista,Dinka Blista,$5 432,$6 518,Compactes,Dinka Blista Avant,Dinka Blista Arriere
 Dinka,Blista Classic,Dinka Blista Classic,$10 346,$12 415,Compactes,Dinka Blista Classique Avant,Dinka Blista Classique Arriere
 Grotti,Brioso R/A,Grotti Brioso R/A,$11 093,$13 311,Compactes,Grotti Brioso R-A Avant,Grotti Brioso R-A Avant
@@ -49,17 +49,17 @@ Cheval,Surge,Cheval Surge,$18 131,$21 757,Berlines,Cheval Surge Avant,Cheval
 Obey,Tailgater,Obey Tailgater,$15 147,$18 176,Berlines,Obey Tailgater Avant,Obey Tailgater Arriere
 Vulcar,Warrener,Vulcar Warrener,$13 770,$16 524,Berlines,Vulcar Warrener Avant,Vulcar Warrener Arriere
 Albany,Washington,Albany Washington,$12 011,$14 413,Berlines,Albany Washigton Avant,Albany Washigton Arriere
-Dewbauchee,Exemplar,Dewbauchee Exemplar,$23 792,$28 550,Coupés,Dewbauchee Exemplar Avant,Dewbauchee Exemplar Arriere
-Ocelot,F620,Ocelot F620,$25 857,$31 028,Coupés,Ocelot F620 Avant,Ocelot F620 Avant
-Lampadati,Felon,Lampadati Felon,$23 256,$27 907,Coupés,Lampadati Felon Avant,Lampadati Felon Arriere
-Lampadati,Felon GT,Lampadati Felon GT,$29 147,$34 976,Coupés,Lampadati Felon GT Avant,Lampadati Felon GT Arriere
-Ocelot,Jackal,Ocelot Jackal,$19 202,$23 042,Coupés,Ocelot Jackal Avant,Ocelot Jackal Arriere
-Ubermacht,Oracle,Ubermacht Oracle,$21 497,$25 796,Coupés,Ubermacht Oracle Avant,Ubermacht Oracle Arriere
-Ubermacht,Oracle XS,Ubermacht Oracle XS,$24 251,$29 101,Coupés,Ubermacht Oracle XS Avant,Ubermacht Oracle XS Arriere
-Ubermacht,Sentinel,Ubermacht Sentinel,$57 884,$69 461,Coupés,Ubermacht Sentinel Avant,Ubermacht Sentinel Arriere
-Ubermacht,Sentinel XS,Ubermacht Sentinel XS,$24 786,$29 743,Coupés,Ubermacht Sentinel XS Avant,Ubermacht Sentinel XS Arriere
-Ubermacht,Zion,Ubermacht Zion,$21 038,$25 245,Coupés,Ubermacht Zion Avant,Ubermacht Zion Arriere
-Ubermacht,Zion Cabrio,Ubermacht Zion Cabrio,$24 633,$29 560,Coupés,Ubermacht Zion Cabrio Avant,Ubermacht Zion Cabrio Arriere
+Dewbauchee,Exemplar,Dewbauchee Exemplar,$23 792,$28 550,Coupées,Dewbauchee Exemplar Avant,Dewbauchee Exemplar Arriere
+Ocelot,F620,Ocelot F620,$25 857,$31 028,Coupées,Ocelot F620 Avant,Ocelot F620 Avant
+Lampadati,Felon,Lampadati Felon,$23 256,$27 907,Coupées,Lampadati Felon Avant,Lampadati Felon Arriere
+Lampadati,Felon GT,Lampadati Felon GT,$29 147,$34 976,Coupées,Lampadati Felon GT Avant,Lampadati Felon GT Arriere
+Ocelot,Jackal,Ocelot Jackal,$19 202,$23 042,Coupées,Ocelot Jackal Avant,Ocelot Jackal Arriere
+Ubermacht,Oracle,Ubermacht Oracle,$21 497,$25 796,Coupées,Ubermacht Oracle Avant,Ubermacht Oracle Arriere
+Ubermacht,Oracle XS,Ubermacht Oracle XS,$24 251,$29 101,Coupées,Ubermacht Oracle XS Avant,Ubermacht Oracle XS Arriere
+Ubermacht,Sentinel,Ubermacht Sentinel,$57 884,$69 461,Coupées,Ubermacht Sentinel Avant,Ubermacht Sentinel Arriere
+Ubermacht,Sentinel XS,Ubermacht Sentinel XS,$24 786,$29 743,Coupées,Ubermacht Sentinel XS Avant,Ubermacht Sentinel XS Arriere
+Ubermacht,Zion,Ubermacht Zion,$21 038,$25 245,Coupées,Ubermacht Zion Avant,Ubermacht Zion Arriere
+Ubermacht,Zion Cabrio,Ubermacht Zion Cabrio,$24 633,$29 560,Coupées,Ubermacht Zion Cabrio Avant,Ubermacht Zion Cabrio Arriere
 Obey,9F,Obey 9F,$47 500,$57 000,Sportives,Obey 9F Avant,Obey 9F Arriere
 Obey,9F cabrio,Obey 9F cabrio,$57 000,$68 400,Sportives,Obey 9F Cabrio Avant,Obey 9F Cabrio Arriere
 Albany,Alpha,Albany Alpha,$72 419,$86 902,Sportives,Albany Alpha Avant,Albany Alpha Arriere
@@ -135,71 +135,71 @@ Declasse,Tornado Custom,Declasse Tornado Custom,$56 781,$68 137,Classiques,D
 Grotti,Turismo Classique,Grotti Turismo Classique,$110 484,$132 581,Classiques,Grotti Turismo Classic Avant,Grotti Turismo Classic Arriere
 Lampadati,Viseris,Lampadati Viseris,$110 565,$132 678,Classiques,Lampadati Viseris Avant,Lampadati Viseris Arriere
 Truffade,Z-Type,Truffade Z-Type,$155 844,$187 013,Classiques,Truffade Z-Type Avant,Truffade Z-Type Arriere
-Vapid,Blade,Vapid Blade,$35 313,$42 376,Cylindres,Vapid Blade Avant,Vapid Blade Arriere
-Albany,Buccaneer,Albany Buccaneer,$22 472,$26 967,Cylindres,Albany Buccaneer avant,Albany Buccaneer arriere
-Albany,Buccaneer Custom,Albany Buccaneer Custom,$89 575,$107 490,Cylindres,Albany Buccaneer custom avant,Albany Buccaneer custom arriere
-Vapid,Chino,Vapid Chino,$41 812,$50 175,Cylindres,Vapid Chino Avant,Vapid Chino Arriere
-Vapid,Chino Custom,Vapid Chino Custom,$83 311,$99 973,Cylindres,Vapid Chino custom Avant,Vapid Chino custom arriere
-Vapid,Chino Clique,Vapid Chino Clique,$38 054,$45 665,Cylindres,Vapid Chino Clique Avant,Vapid chino clique Arriere
-Invetero,Coquette Blackfin,Invetero Coquette Blackfin,$110 168,$132 202,Cylindres,Invetero Coquette BlackFin Avant,Invetero Coquette BlackFin Arriere
-Vapid,Dominator,Vapid Dominator,$54 575,$65 490,Cylindres,Vapid Dominator Avant,Vapid Dominator Arriere
-Vapid,Dominator GTX,Vapid Dominator GTX,$73 759,$88 510,Cylindres,Vapid Dominator GTX Avant,Vapid Dominator GTX Arriere
-Imponte,Dukes,Imponte Dukes,$36 331,$43 597,Cylindres,Imponte Dukes Avant,Imponte Dukes Arriere
-Vapid,Ellie,Vapid Ellie,$40 403,$48 483,Cylindres,Vapid Ellie Avant,Vapid Ellie Arriere
-Willard,Faction,Willard Faction,$16 991,$20 389,Cylindres,Willard Faction Avant,Willard Faction Arriere
-Willard,Faction Custom,Willard Faction Custom,$32 729,$39 275,Cylindres,Willard Faction Custom avant,Willard Faction Custom arriere
-Bravado,Gauntlet,Bravado Gauntlet,$28 501,$34 201,Cylindres,Bravado Gauntlet Avant,Bravado Gauntlet Arriere
-Bravado,Gauntlet Hellfire,Bravado Gauntlet Hellfire,$55 358,$66 430,Cylindres,Bravado Gauntlet HellFire Avant,Bravado Gauntlet HellFire Arriere
-Vapid,Hotknife,Vapid Hotknife,$117 450,$140 940,Cylindres,Vapid Hotknife Avant,Vapid Hotknife Arriere
-Vapid,Hustler,Vapid Hustler,$65 929,$79 114,Cylindres,Vapid Hustler Avant,Vapid Hustler Arriere
-Declasse,Impaler,Declasse Impaler,$53 322,$63 987,Cylindres,Declasse Impaler Avant,Declasse Impaler Arriere
-Declasse,Moonbeam,Declasse Moonbeam,$22 237,$26 685,Cylindres,Declasse Moonbeam Avant,Declasse Moonbeam Arriere
-Declasse,Moonbeam Custom,Declasse Moonbeam Custom,$54 575,$65 490,Cylindres,Declasse Moonbeam Custom Avant,Declasse Moonbeam Custom Arriere
-Imponte,Nightshade,Imponte Nightshade,$80 179,$96 215,Cylindres,Imponte NightShade Avant,Imponte NightShade Arriere
-Imponte,Phoenix,Imponte Phoenix,$27 953,$33 544,Cylindres,Imponte Phenix Avant,Imponte Phenix Arriere
-Cheval,Picador,Cheval Picador,$17 539,$21 047,Cylindres,Cheval Picador Avant,Cheval Picador Arriere
-Imponte,Ruiner,Imponte Ruiner,$40 090,$48 108,Cylindres,Imponte Ruiner Avant,Imponte Ruiner Arriere
-Vapid,Slamvan,Vapid Slamvan,$33 512,$40 215,Cylindres,Vapid SlamVan avant,Vapid SlamVan arriere
-Vapid,Slamvan Custom,Vapid Slamvan Custom,$64 284,$77 141,Cylindres,Vapid SlamVan Custom avant,Vapid SlamVan Custom arriere
-Declasse,Stalion,Declasse Stalion,$27 875,$33 450,Cylindres,Declasse Stallion Avant,Declasse Stallion Arriere
-Declasse,Tampa,Declasse Tampa,$54 340,$65 208,Cylindres,Declasse Tampa avant,Declasse Tampa Arriere
-Dundreary,Virgo Classique,Dundreary Virgo Classique,$74 542,$89 450,Cylindres,Dundreary Virgo Classique Avant,Dundreary Virgo Classique Arriere
-Dundreary,Virgo Classique Custom,Dundreary Virgo Classique Custom,$94 900,$113 880,Cylindres,Dundreary Virgo Classique Custom Avant,Dundreary Virgo Classique Custom Arriere
-Declasse,Voodoo Custom,Declasse Voodoo Custom,$66 007,$79 208,Cylindres,Declasse Vodoo Custom avant,Declasse Vodoo Custom arriere
-Declasse,Yosemite,Declasse Yosemite,$68 199,$81 839,Cylindres,Declasse Yosemite Avant,Declasse Yosemite Arriere
-Pfister,811,Pfister 811,$179 550,$215 460,Supers Sportives,811-GTAO-FrontQuarter,811-GTAO-RearQuarter
-Truffade,Adder,Truffade Adder,$222 300,$266 760,Supers Sportives,Adder-GTAV-FrontQuarter,Adder-GTAV-RearQuarter
-Overflod,Autarch,Overflod Autarch,$226 575,$271 890,Supers Sportives,Autarch-GTAO-FrontQuarter,Autarch-GTAO-RearQuarter
-Bravado,Banshee 900R,Bravado Banshee 900R,$205 200,$246 240,Supers Sportives,Banshee900R-GTAO-FrontQuarter,Banshee900R-GTAO-RearQuarter
-Vapid,Bullet,Vapid Bullet,$183 825,$220 590,Supers Sportives,Bullet-GTAV-FrontQuarter,Bullet-GTAV-RearQuarter
-Grotti,Cheetah,Grotti Cheetah,$220 590,$264 708,Supers Sportives,Cheetah-GTAV-FrontQuarter,Cheetah-GTAV-RearQuarter
-Coil,Cyclone,Coil Cyclone,$179 550,$215 460,Supers Sportives,Cyclone-GTAO-FrontQuarter,Cyclone-GTAO-RearQuarter
-Overflod,Entity XF,Overflod Entity XF,$188 100,$225 720,Supers Sportives,EntityXF-GTAV-FrontQuarter,EntityXF-GTAV-RearQuarter
-Vapid,FMJ,Vapid FMJ,$218 025,$261 630,Supers Sportives,FMJ-GTAO-FrontQuarter,FMJ-GTAO-RearQuarter
-Progen,GP1,Progen GP1,$183 825,$220 590,Supers Sportives,GP1-GTAO-FrontQuarter,GP1-GTAO-RearQuarter
-Pegassi,Infernus,Pegassi Infernus,$218 025,$261 630,Supers Sportives,Infernus-GTAV-FrontQuarter,Infernus-GTAV-RearQuarter
-Progen,Itali GTB,Progen Itali GTB,$230 850,$277 020,Supers Sportives,ItaliGTB-GTAO-FrontQuarter,ItaliGTB-GTAO-RearQuarter
-Progen,Itali GTB Custom,Progen Itali GTB Custom,$247 950,$297 540,Supers Sportives,ItaliGTBCustom-GTAO-FrontQuarter,ItaliGTBCustom-GTAO-RearQuarter
-Truffade,Nero,Truffade Nero,$213 750,$256 500,Supers Sportives,Nero-GTAO-FrontQuarter,Nero-GTAO-RearQuarter
-Truffade,Nero Custom,Truffade Nero Custom,$230 850,$277 020,Supers Sportives,NeroCustom-GTAO-FrontQuarter,NeroCustom-GTAO-RearQuarter
-Pegassi,Osiris,Pegassi Osiris,$200 925,$241 110,Supers Sportives,Osiris-GTAV-FrontQuarter,Osiris-GTAV-RearQuarter
-Ocelot,Penetrator,Ocelot Penetrator,$209 475,$251 370,Supers Sportives,Penetrator-GTAO-FrontQuarter,Penetrator-GTAO-RearQuarter
-Pegassi,Reaper,Pegassi Reaper,$213 750,$256 500,Supers Sportives,Reaper-GTAO-FrontQuarter,Reaper-GTAO-RearQuarter
-Ubermacht,SC1,Ubermacht SC1,$195 795,$234 954,Supers Sportives,SC1-GTAO-FrontQuarter,SC1-GTAO-RearQuarter
-Karin,Sultan RS,Karin Sultan RS,$190 950,$229 140,Supers Sportives,SultanRS-GTAO-FrontQuarter,SultanRS-GTAO-RearQuarter
-Progen,T20,Progen T20,$222 300,$266 760,Supers Sportives,T20-GTAV-FrontQuarter,T20-GTAV-RearQuarter
-Cheval,Taipan,Cheval Taipan,$212 040,$254 448,Supers Sportives,Taipan-GTAO-FrontQuarter,Taipan-GTAO-RearQuarter
-Pegassi,Tempesta,Pegassi Tempesta,$229 995,$275 994,Supers Sportives,Tempesta-GTAO-FrontQuarter,Tempesta-GTAO-RearQuarter
-Pegassi,Tezeract,Pegassi Tezeract,$255 645,$306 774,Supers Sportives,Tezeract-GTAO-FrontQuarter,Tezeract-GTAO-RearQuarter
-Grotti,Turismo R,Grotti Turismo R,$222 300,$266 760,Supers Sportives,TurismoR-GTAV-FrontQuarter,TurismoR-GTAV-RearQuarter
-Overflod,Tyrant,Overflod Tyrant,$206 055,$247 266,Supers Sportives,Tyrant-GTAO-FrontQuarter,Tyrant-GTAO-RearQuarter
-Progen,Tyrus,Progen Tyrus,$203 490,$244 188,Supers Sportives,Tyrus-GTAO-FrontQuarter,Tyrus-GTAO-RearQuarter
-Pegassi,Vacca,Pegassi Vacca,$170 145,$204 174,Supers Sportives,Vacca-GTAV-FrontQuarter,Vacca-GTAV-RearQuarter
-Dewbauchee,Vagner,Dewbauchee Vagner,$175 275,$210 330,Supers Sportives,VagnerNew-GTAO-FrontQuarter,VagnerNew-GTAO-RearQuarter
-Grotti,Visione,Grotti Visione,$218 025,$261 630,Supers Sportives,VisioneNew-GTAO-FrontQuarter,VisioneNew-GTAO-RearQuarter
-Coil,Voltic,Coil Voltic,$136 800,$164 160,Supers Sportives,Voltic-GTAV-FrontQuarter,Voltic-GTAV-RearQuarter
-Ocelot,XA-21,Ocelot XA-21,$239 400,$287 280,Supers Sportives,XA21-GTAO-FrontQuarter,XA21-GTAO-RearQuarter
-Pegassi,Zentorno,Pegassi Zentorno,$188 100,$225 720,Supers Sportives,Zentorno-GTAV-FrontQuarter,Zentorno-GTAV-RearQuarter
+Vapid,Blade,Vapid Blade,$35 313,$42 376,Grosses cylindrées,Vapid Blade Avant,Vapid Blade Arriere
+Albany,Buccaneer,Albany Buccaneer,$22 472,$26 967,Grosses cylindrées,Albany Buccaneer avant,Albany Buccaneer arriere
+Albany,Buccaneer Custom,Albany Buccaneer Custom,$89 575,$107 490,Grosses cylindrées,Albany Buccaneer custom avant,Albany Buccaneer custom arriere
+Vapid,Chino,Vapid Chino,$41 812,$50 175,Grosses cylindrées,Vapid Chino Avant,Vapid Chino Arriere
+Vapid,Chino Custom,Vapid Chino Custom,$83 311,$99 973,Grosses cylindrées,Vapid Chino custom Avant,Vapid Chino custom arriere
+Vapid,Chino Clique,Vapid Chino Clique,$38 054,$45 665,Grosses cylindrées,Vapid Chino Clique Avant,Vapid chino clique Arriere
+Invetero,Coquette Blackfin,Invetero Coquette Blackfin,$110 168,$132 202,Grosses cylindrées,Invetero Coquette BlackFin Avant,Invetero Coquette BlackFin Arriere
+Vapid,Dominator,Vapid Dominator,$54 575,$65 490,Grosses cylindrées,Vapid Dominator Avant,Vapid Dominator Arriere
+Vapid,Dominator GTX,Vapid Dominator GTX,$73 759,$88 510,Grosses cylindrées,Vapid Dominator GTX Avant,Vapid Dominator GTX Arriere
+Imponte,Dukes,Imponte Dukes,$36 331,$43 597,Grosses cylindrées,Imponte Dukes Avant,Imponte Dukes Arriere
+Vapid,Ellie,Vapid Ellie,$40 403,$48 483,Grosses cylindrées,Vapid Ellie Avant,Vapid Ellie Arriere
+Willard,Faction,Willard Faction,$16 991,$20 389,Grosses cylindrées,Willard Faction Avant,Willard Faction Arriere
+Willard,Faction Custom,Willard Faction Custom,$32 729,$39 275,Grosses cylindrées,Willard Faction Custom avant,Willard Faction Custom arriere
+Bravado,Gauntlet,Bravado Gauntlet,$28 501,$34 201,Grosses cylindrées,Bravado Gauntlet Avant,Bravado Gauntlet Arriere
+Bravado,Gauntlet Hellfire,Bravado Gauntlet Hellfire,$55 358,$66 430,Grosses cylindrées,Bravado Gauntlet HellFire Avant,Bravado Gauntlet HellFire Arriere
+Vapid,Hotknife,Vapid Hotknife,$117 450,$140 940,Grosses cylindrées,Vapid Hotknife Avant,Vapid Hotknife Arriere
+Vapid,Hustler,Vapid Hustler,$65 929,$79 114,Grosses cylindrées,Vapid Hustler Avant,Vapid Hustler Arriere
+Declasse,Impaler,Declasse Impaler,$53 322,$63 987,Grosses cylindrées,Declasse Impaler Avant,Declasse Impaler Arriere
+Declasse,Moonbeam,Declasse Moonbeam,$22 237,$26 685,Grosses cylindrées,Declasse Moonbeam Avant,Declasse Moonbeam Arriere
+Declasse,Moonbeam Custom,Declasse Moonbeam Custom,$54 575,$65 490,Grosses cylindrées,Declasse Moonbeam Custom Avant,Declasse Moonbeam Custom Arriere
+Imponte,Nightshade,Imponte Nightshade,$80 179,$96 215,Grosses cylindrées,Imponte NightShade Avant,Imponte NightShade Arriere
+Imponte,Phoenix,Imponte Phoenix,$27 953,$33 544,Grosses cylindrées,Imponte Phenix Avant,Imponte Phenix Arriere
+Cheval,Picador,Cheval Picador,$17 539,$21 047,Grosses cylindrées,Cheval Picador Avant,Cheval Picador Arriere
+Imponte,Ruiner,Imponte Ruiner,$40 090,$48 108,Grosses cylindrées,Imponte Ruiner Avant,Imponte Ruiner Arriere
+Vapid,Slamvan,Vapid Slamvan,$33 512,$40 215,Grosses cylindrées,Vapid SlamVan avant,Vapid SlamVan arriere
+Vapid,Slamvan Custom,Vapid Slamvan Custom,$64 284,$77 141,Grosses cylindrées,Vapid SlamVan Custom avant,Vapid SlamVan Custom arriere
+Declasse,Stalion,Declasse Stalion,$27 875,$33 450,Grosses cylindrées,Declasse Stallion Avant,Declasse Stallion Arriere
+Declasse,Tampa,Declasse Tampa,$54 340,$65 208,Grosses cylindrées,Declasse Tampa avant,Declasse Tampa Arriere
+Dundreary,Virgo Classique,Dundreary Virgo Classique,$74 542,$89 450,Grosses cylindrées,Dundreary Virgo Classique Avant,Dundreary Virgo Classique Arriere
+Dundreary,Virgo Classique Custom,Dundreary Virgo Classique Custom,$94 900,$113 880,Grosses cylindrées,Dundreary Virgo Classique Custom Avant,Dundreary Virgo Classique Custom Arriere
+Declasse,Voodoo Custom,Declasse Voodoo Custom,$66 007,$79 208,Grosses cylindrées,Declasse Vodoo Custom avant,Declasse Vodoo Custom arriere
+Declasse,Yosemite,Declasse Yosemite,$68 199,$81 839,Grosses cylindrées,Declasse Yosemite Avant,Declasse Yosemite Arriere
+Pfister,811,Pfister 811,$179 550,$215 460,Super sportives,811-GTAO-FrontQuarter,811-GTAO-RearQuarter
+Truffade,Adder,Truffade Adder,$222 300,$266 760,Super sportives,Adder-GTAV-FrontQuarter,Adder-GTAV-RearQuarter
+Overflod,Autarch,Overflod Autarch,$226 575,$271 890,Super sportives,Autarch-GTAO-FrontQuarter,Autarch-GTAO-RearQuarter
+Bravado,Banshee 900R,Bravado Banshee 900R,$205 200,$246 240,Super sportives,Banshee900R-GTAO-FrontQuarter,Banshee900R-GTAO-RearQuarter
+Vapid,Bullet,Vapid Bullet,$183 825,$220 590,Super sportives,Bullet-GTAV-FrontQuarter,Bullet-GTAV-RearQuarter
+Grotti,Cheetah,Grotti Cheetah,$220 590,$264 708,Super sportives,Cheetah-GTAV-FrontQuarter,Cheetah-GTAV-RearQuarter
+Coil,Cyclone,Coil Cyclone,$179 550,$215 460,Super sportives,Cyclone-GTAO-FrontQuarter,Cyclone-GTAO-RearQuarter
+Overflod,Entity XF,Overflod Entity XF,$188 100,$225 720,Super sportives,EntityXF-GTAV-FrontQuarter,EntityXF-GTAV-RearQuarter
+Vapid,FMJ,Vapid FMJ,$218 025,$261 630,Super sportives,FMJ-GTAO-FrontQuarter,FMJ-GTAO-RearQuarter
+Progen,GP1,Progen GP1,$183 825,$220 590,Super sportives,GP1-GTAO-FrontQuarter,GP1-GTAO-RearQuarter
+Pegassi,Infernus,Pegassi Infernus,$218 025,$261 630,Super sportives,Infernus-GTAV-FrontQuarter,Infernus-GTAV-RearQuarter
+Progen,Itali GTB,Progen Itali GTB,$230 850,$277 020,Super sportives,ItaliGTB-GTAO-FrontQuarter,ItaliGTB-GTAO-RearQuarter
+Progen,Itali GTB Custom,Progen Itali GTB Custom,$247 950,$297 540,Super sportives,ItaliGTBCustom-GTAO-FrontQuarter,ItaliGTBCustom-GTAO-RearQuarter
+Truffade,Nero,Truffade Nero,$213 750,$256 500,Super sportives,Nero-GTAO-FrontQuarter,Nero-GTAO-RearQuarter
+Truffade,Nero Custom,Truffade Nero Custom,$230 850,$277 020,Super sportives,NeroCustom-GTAO-FrontQuarter,NeroCustom-GTAO-RearQuarter
+Pegassi,Osiris,Pegassi Osiris,$200 925,$241 110,Super sportives,Osiris-GTAV-FrontQuarter,Osiris-GTAV-RearQuarter
+Ocelot,Penetrator,Ocelot Penetrator,$209 475,$251 370,Super sportives,Penetrator-GTAO-FrontQuarter,Penetrator-GTAO-RearQuarter
+Pegassi,Reaper,Pegassi Reaper,$213 750,$256 500,Super sportives,Reaper-GTAO-FrontQuarter,Reaper-GTAO-RearQuarter
+Ubermacht,SC1,Ubermacht SC1,$195 795,$234 954,Super sportives,SC1-GTAO-FrontQuarter,SC1-GTAO-RearQuarter
+Karin,Sultan RS,Karin Sultan RS,$190 950,$229 140,Super sportives,SultanRS-GTAO-FrontQuarter,SultanRS-GTAO-RearQuarter
+Progen,T20,Progen T20,$222 300,$266 760,Super sportives,T20-GTAV-FrontQuarter,T20-GTAV-RearQuarter
+Cheval,Taipan,Cheval Taipan,$212 040,$254 448,Super sportives,Taipan-GTAO-FrontQuarter,Taipan-GTAO-RearQuarter
+Pegassi,Tempesta,Pegassi Tempesta,$229 995,$275 994,Super sportives,Tempesta-GTAO-FrontQuarter,Tempesta-GTAO-RearQuarter
+Pegassi,Tezeract,Pegassi Tezeract,$255 645,$306 774,Super sportives,Tezeract-GTAO-FrontQuarter,Tezeract-GTAO-RearQuarter
+Grotti,Turismo R,Grotti Turismo R,$222 300,$266 760,Super sportives,TurismoR-GTAV-FrontQuarter,TurismoR-GTAV-RearQuarter
+Overflod,Tyrant,Overflod Tyrant,$206 055,$247 266,Super sportives,Tyrant-GTAO-FrontQuarter,Tyrant-GTAO-RearQuarter
+Progen,Tyrus,Progen Tyrus,$203 490,$244 188,Super sportives,Tyrus-GTAO-FrontQuarter,Tyrus-GTAO-RearQuarter
+Pegassi,Vacca,Pegassi Vacca,$170 145,$204 174,Super sportives,Vacca-GTAV-FrontQuarter,Vacca-GTAV-RearQuarter
+Dewbauchee,Vagner,Dewbauchee Vagner,$175 275,$210 330,Super sportives,VagnerNew-GTAO-FrontQuarter,VagnerNew-GTAO-RearQuarter
+Grotti,Visione,Grotti Visione,$218 025,$261 630,Super sportives,VisioneNew-GTAO-FrontQuarter,VisioneNew-GTAO-RearQuarter
+Coil,Voltic,Coil Voltic,$136 800,$164 160,Super sportives,Voltic-GTAV-FrontQuarter,Voltic-GTAV-RearQuarter
+Ocelot,XA-21,Ocelot XA-21,$239 400,$287 280,Super sportives,XA21-GTAO-FrontQuarter,XA21-GTAO-RearQuarter
+Pegassi,Zentorno,Pegassi Zentorno,$188 100,$225 720,Super sportives,Zentorno-GTAV-FrontQuarter,Zentorno-GTAV-RearQuarter
 Gallivanter,Baller,Gallivanter Baller,$35 640,$42 768,SUV,Baller-GTAV-FrontQuarter,Baller-GTAV-RearQuarter
 Gallivanter,Baller V2,Gallivanter Baller V2,$51 480,$61 776,SUV,Baller2-GTAV-FrontQuarter,Baller2-GTAV-RearQuarter
 Gallivanter,Baller V2 LE,Gallivanter Baller V2 LE,$67 320,$80 784,SUV,BallerLE-GTAO-FrontQuarter,BallerLE-GTAO-RearQuarter
@@ -223,23 +223,23 @@ Canis,Seminole,Canis Seminole,$34 056,$40 867,SUV,Seminole-GTAV-FrontQuarter
 Benefactor,Serrano,Benefactor Serrano,$28 512,$34 214,SUV,Serrano-GTAV-FrontQuarter,Serrano-GTAV-RearQuarter
 Pegassi,Toros,Pegassi Toros,$99 000,$118 800,SUV,Toros-GTAO-FrontQuarter,Toros-GTAO-RearQuarter
 Benefactor,XLS,Benefactor XLS,$39 600,$47 520,SUV,XLS-GTAO-FrontQuarter,XLS-GTAO-RearQuarter
-BF,Bifta,BF Bifta,$11 745,$14 094,Touts-Terrains,Bifta Avant,Bifta Arriere
-Nagasaki,Blazer,Nagasaki Blazer,$7 204,$8 644,Touts-Terrains,Blazer Avant,Blazer Arriere
-Nagasaki,Blazer Street,Nagasaki Blazer Street,$9 161,$10 993,Touts-Terrains,Blazer Street Avant,Blazer Street Arriere
-Coil,Brawler,Coil Brawler,$19 575,$23 490,Touts-Terrains,Brawler Avant,Brawler Arriere
-Benefactor,Dubsta 6x6,Benefactor Dubsta 6x6,$47 685,$57 222,Touts-Terrains,Dubsta 6x6 avant,Dubsta 6x6 arriere
-Dune,Buggy,Dune Buggy,$15 660,$18 792,Touts-Terrains,,
-Canis,Freecrawler,Canis Freecrawler,$27 327,$32 792,Touts-Terrains,Canis FreeCrawler avant,Canis FreeCrawler arriere
-Canis,Kalahari,Canis Kalahari,$4 698,$5 638,Touts-Terrains,Kalahari-GTAV-FrontQuarter,Kalahari-GTAV-RearQuarter
-Canis,Kalahari Décapotable,Canis Kalahari Décapotable,$5 403,$6 483,Touts-Terrains,Kalahari-GTAV-RearQuarter - Decapotable (2),Kalahari-GTAV-RearQuarter - Decapotable (1)
-Canis,Kamacho,Canis Kamacho,$86 130,$103 356,Touts-Terrains,Kamacho-GTAO-frontquarter,Kamacho-GTAO-rearquarter
-Canis,Mesa Tout-Terrain,Canis Mesa Tout-Terrain,$54 810,$65 772,Touts-Terrains,Mesa-GTAV-FrontQuarter,Mesa-GTAV-RearQuarter
-Declasse,Rancher XL,Declasse Rancher XL,$23 412,$28 094,Touts-Terrains,RancherXL-GTAV-FrontQuarter,RancherXL-GTAV-RearQuarter
-Karin,Rebel V2,Karin Rebel V2,$20 358,$24 430,Touts-Terrains,Rebel-GTAV-FrontQuarter,Rebel-GTAV-RearQuarter
-Vapid,Riata,Vapid Riata,$22 629,$27 154,Touts-Terrains,Riata-GTAO-frontquarter,Riata-GTAO-rearquarter
-Vapid,Sandking SWB,Vapid Sandking SWB,$27 405,$32 886,Touts-Terrains,SandkingSWB-GTAV-FrontQuarter,SandkingSWB-GTAV-RearQuarter
-Vapid,Sandking XL,Vapid Sandking XL,$35 235,$42 282,Touts-Terrains,SandkingXL-GTAV-FrontQuarter,SandkingXL-GTAV-RearQuarter
-Vapid,Trophy Truck,Vapid Trophy Truck,$23 490,$28 188,Touts-Terrains,TrophyTruck-GTAO-FrontQuarter,TrophyTruck-GTAO-RearQuarter
+BF,Bifta,BF Bifta,$11 745,$14 094,Tout-terrains,Bifta Avant,Bifta Arriere
+Nagasaki,Blazer,Nagasaki Blazer,$7 204,$8 644,Tout-terrains,Blazer Avant,Blazer Arriere
+Nagasaki,Blazer Street,Nagasaki Blazer Street,$9 161,$10 993,Tout-terrains,Blazer Street Avant,Blazer Street Arriere
+Coil,Brawler,Coil Brawler,$19 575,$23 490,Tout-terrains,Brawler Avant,Brawler Arriere
+Benefactor,Dubsta 6x6,Benefactor Dubsta 6x6,$47 685,$57 222,Tout-terrains,Dubsta 6x6 avant,Dubsta 6x6 arriere
+Dune,Buggy,Dune Buggy,$15 660,$18 792,Tout-terrains,,
+Canis,Freecrawler,Canis Freecrawler,$27 327,$32 792,Tout-terrains,Canis FreeCrawler avant,Canis FreeCrawler arriere
+Canis,Kalahari,Canis Kalahari,$4 698,$5 638,Tout-terrains,Kalahari-GTAV-FrontQuarter,Kalahari-GTAV-RearQuarter
+Canis,Kalahari Décapotable,Canis Kalahari Décapotable,$5 403,$6 483,Tout-terrains,Kalahari-GTAV-RearQuarter - Decapotable (2),Kalahari-GTAV-RearQuarter - Decapotable (1)
+Canis,Kamacho,Canis Kamacho,$86 130,$103 356,Tout-terrains,Kamacho-GTAO-frontquarter,Kamacho-GTAO-rearquarter
+Canis,Mesa Tout-Terrain,Canis Mesa Tout-Terrain,$54 810,$65 772,Tout-terrains,Mesa-GTAV-FrontQuarter,Mesa-GTAV-RearQuarter
+Declasse,Rancher XL,Declasse Rancher XL,$23 412,$28 094,Tout-terrains,RancherXL-GTAV-FrontQuarter,RancherXL-GTAV-RearQuarter
+Karin,Rebel V2,Karin Rebel V2,$20 358,$24 430,Tout-terrains,Rebel-GTAV-FrontQuarter,Rebel-GTAV-RearQuarter
+Vapid,Riata,Vapid Riata,$22 629,$27 154,Tout-terrains,Riata-GTAO-frontquarter,Riata-GTAO-rearquarter
+Vapid,Sandking SWB,Vapid Sandking SWB,$27 405,$32 886,Tout-terrains,SandkingSWB-GTAV-FrontQuarter,SandkingSWB-GTAV-RearQuarter
+Vapid,Sandking XL,Vapid Sandking XL,$35 235,$42 282,Tout-terrains,SandkingXL-GTAV-FrontQuarter,SandkingXL-GTAV-RearQuarter
+Vapid,Trophy Truck,Vapid Trophy Truck,$23 490,$28 188,Tout-terrains,TrophyTruck-GTAO-FrontQuarter,TrophyTruck-GTAO-RearQuarter
 Bravado,Bison,Bravado Bison,$9 716,$11 659,Camionnettes,Bison-GTAV-FrontQuarter,Bison-GTAV-RearQuarter
 Declasse,Burrito3 (V3),Declasse Burrito3 (V3),$10 175,$12 209,Camionnettes,Burrito3-GTAV-FrontQuarter,Burrito3-GTAV-RearQuarter
 Camper,Camper,Camper,$11 934,$14 321,Camionnettes,Camper-GTAV-FrontQuarter,Camper-GTAV-RearQuarter
@@ -292,9 +292,9 @@ Mule,Mule Custom,Mule Custom,$29 750,$35 700,Utilitaires,Mule custom Avant,M
 ,,Vortex,$57 510,$69 012,Motos,Vortex-GTAO-FrontQuarter,Vortex-GTAO-RearQuarter
 ,,Western Motor Cycles Company Wolfsbane,$15 633,$18 760,Motos,Wolfsbane-GTAO-FrontQuarter,Wolfsbane-GTAO-RearQuarter
 ,,Pegassi Faggio,$1 701,$2 041,Motos,Faggio-GTAV-FrontQuarter,Faggio-GTAV-RearQuarter
-,,Bmx,$120,$144,Velo,BMX-GTAV-front,BMX-GTAV-Side
-,,Cruiser,$120,$144,Velo,Cruiser-GTAV-front,CruiserBike-GTAV-Side
-,,Endurex,$120,$144,Velo,EndurexRaceBike-GTAV-front,EndurexRaceBike-GTAV-PandMCycles
-,,Fixter,$120,$144,Velo,Fixter-GTAV-front,Fixter-GTAV-rear
-,,Scorcher,$120,$144,Velo,Scorcher-GTAV-front,Scorcher-GTAV-rear
-,,Whippet,$120,$144,Velo,WhippetRaceBike-GTAV-front,WhippetBike-GTAV-Side
+,,Bmx,$120,$144,Vélos,BMX-GTAV-front,BMX-GTAV-Side
+,,Cruiser,$120,$144,Vélos,Cruiser-GTAV-front,CruiserBike-GTAV-Side
+,,Endurex,$120,$144,Vélos,EndurexRaceBike-GTAV-front,EndurexRaceBike-GTAV-PandMCycles
+,,Fixter,$120,$144,Vélos,Fixter-GTAV-front,Fixter-GTAV-rear
+,,Scorcher,$120,$144,Vélos,Scorcher-GTAV-front,Scorcher-GTAV-rear
+,,Whippet,$120,$144,Vélos,WhippetRaceBike-GTAV-front,WhippetBike-GTAV-Side
