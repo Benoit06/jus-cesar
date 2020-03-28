@@ -22,6 +22,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/agency.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
 
 </head>
 
@@ -709,6 +710,17 @@
                     </div>
                   </div>
                 </div>
+
+                <div class="row d-flex flex-nowrap">
+                  <div class="flex-grow-1">
+
+                    <div class="d-flex">
+                      <span class="price_start"></span>
+                      <input id="pricerange" type="text" class="ml-2 mr-2"/>
+                      <span class="price_end"></span>
+                    </div>
+                  </div>
+                </div>
         
                 <div id="cars" class="row">
                     
@@ -756,6 +768,7 @@
 
 
   <script src="js/jquery.csv.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
 
   <script>
 
@@ -783,10 +796,13 @@ String.prototype.removeAccents = function(){
     var selectedBrand = '';
     var sortValue = 'priceInt';
     var sortOrder = 'asc';
+    var priceRange = null;
 
     var categories = [];
     var items = [];
     var filteredItems = [];
+
+    var priceSlider = null;
 
     $.ajax({
         url: "liste.csv",
@@ -843,8 +859,9 @@ String.prototype.removeAccents = function(){
           filteredItems = filteredItems.sort(compareValues(sortValue, sortOrder));
         }
 
-        console.log('list', sortValue, sortOrder, filteredItems);
-        
+        setPriceRangeMinMax();
+
+        filteredItems = filteredItems.filter((item) => item.priceInt >= priceRange[0] && item.priceInt <= priceRange[1]);
 
         filteredItems.forEach((item) => {
             var template = $("#car-template").clone().removeClass('invisible').removeAttr('id');
@@ -856,6 +873,20 @@ String.prototype.removeAccents = function(){
         });
     }
 
+    function setPriceRangeMinMax() {
+      if(priceRange == null) {
+        priceRange = [];
+        priceRange[0] = getMin(filteredItems, 'priceInt');
+        priceRange[1] = getMax(filteredItems, 'priceInt');
+
+        priceSlider.slider('setAttribute','min', priceRange[0]);
+        priceSlider.slider('setAttribute','max', priceRange[1]);
+        priceSlider.slider('refresh');
+        
+        updatePriceRangeInput();
+      }
+    }
+
     $('.portfolio-item').click((event) => {
       var $el = $(event.currentTarget);
       updateSelectedCategory($el.find('h4').first().text().normalize());
@@ -863,11 +894,13 @@ String.prototype.removeAccents = function(){
 
     $("#category-select").change(() => {
         selectedBrand = '';
+        resetPriceRange();
         $('#brand-select').val('');
         updateSelectedCategory($("#category-select").val().normalize());
     });
 
     $("#brand-select").change(() => {
+      resetPriceRange();
       updateSelectedBrand($("#brand-select").val().normalize());
     });
 
@@ -885,6 +918,31 @@ String.prototype.removeAccents = function(){
 
       setCars();
     });
+
+    priceSlider = $("#pricerange").slider({
+      // min: priceRange[0],
+      // max: priceRange[1],
+      // interval: 
+      range: true
+    });
+
+    priceSlider.on('change', (el) => {
+      priceRange = $("#pricerange").val().split(',').map(val => parseInt(val));
+      updatePriceRangeInput();
+    })
+
+    priceSlider.on('slideStop', (el) => {
+      setCars();
+    })
+
+    function updatePriceRangeInput() {
+      $('.price_start').text(priceRange[0]);
+      $('.price_end').text(priceRange[1]);
+    }
+
+    function resetPriceRange() {
+      priceRange = null;
+    }
 
     
 
@@ -938,6 +996,13 @@ String.prototype.removeAccents = function(){
           (order === 'desc') ? (comparison * -1) : comparison
         );
       };
+    }
+
+    function getMin(data, property) {
+      return data.reduce((min, p) => p[property] < min ? p[property] : min, data[0][property]);
+    }
+    function getMax(data, property) {
+      return data.reduce((max, p) => p[property] > max ? p[property] : max, data[0][property]);
     }
 
 </script>

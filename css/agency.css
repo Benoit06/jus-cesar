@@ -681,3 +681,9 @@ ul.social-buttons li a {
 ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
   background-color: #4267b2     ;
 }
+
+.slider-horizontal {
+  flex-grow: 1!important;
+  margin-left: 1rem!important;
+  margin-right: 1rem!important;
+}
