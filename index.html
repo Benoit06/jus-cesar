@@ -862,6 +862,8 @@ String.prototype.removeAccents = function(){
     });
 
     $("#category-select").change(() => {
+        selectedBrand = '';
+        $('#brand-select').val('');
         updateSelectedCategory($("#category-select").val().normalize());
     });
 
