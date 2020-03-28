@@ -876,7 +876,7 @@ String.prototype.removeAccents = function(){
     function setPriceRangeMinMax() {
       if(priceRange == null) {
         priceRange = [];
-        priceRange[0] = getMin(filteredItems, 'priceInt');
+        priceRange[0] = 0;
         priceRange[1] = getMax(filteredItems, 'priceInt');
 
         priceSlider.slider('setAttribute','min', priceRange[0]);
@@ -889,6 +889,8 @@ String.prototype.removeAccents = function(){
 
     $('.portfolio-item').click((event) => {
       var $el = $(event.currentTarget);
+      selectedBrand = '';
+      resetPriceRange();
       updateSelectedCategory($el.find('h4').first().text().normalize());
     });
 
