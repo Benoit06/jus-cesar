@@ -676,7 +676,7 @@
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
 
 
-                <div class="row d-flex">
+                <div class="row d-flex flex-nowrap">
                   <div class="flex-grow-1 mr-2">
                     <div class="form-group">
                       <label for="category-select">Catégorie</label>
@@ -686,11 +686,25 @@
                     </div>
                   </div>
                   
-                  <div class="flex-grow-1 ml-2">
+                  <div class="flex-grow-1 ml-2 mr-2">
                     <div class="form-group">
                       <label for="brand-select">Marque</label>
                       <select id="brand-select" class="custom-select">
                         <option value="">Tous</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="flex-grow-1 ml-2">
+                    <div class="form-group">
+                      <label for="sort-select">Trier par</label>
+                      <select id="sort-select" class="custom-select">
+                        <option value="priceInt_asc">Prix croissant</option>
+                        <option value="priceInt_desc">Prix décroissant</option>
+                        <option value="name_asc">Nom a-z</option>
+                        <option value="name_desc">Nom z-a</option>
+                        <option value="brand_asc">Marque a-z</option>
+                        <option value="brand_desc">Marque z-a</option>
                       </select>
                     </div>
                   </div>
@@ -767,6 +781,9 @@ String.prototype.removeAccents = function(){
         
     var selectedCategory = '';
     var selectedBrand = '';
+    var sortValue = 'priceInt';
+    var sortOrder = 'asc';
+
     var categories = [];
     var items = [];
     var filteredItems = [];
@@ -776,6 +793,10 @@ String.prototype.removeAccents = function(){
         async: false,
         success: function (csvd) {
             items = $.csv.toObjects(csvd);
+            items.forEach((item) => {
+              
+              item.priceInt = parseInt(item.price.replace(/\D+/g, ''));
+            })
         },
         dataType: "text",
         complete: function () {
@@ -818,6 +839,13 @@ String.prototype.removeAccents = function(){
           return pass;
         })
 
+        if(sortValue && sortOrder) {
+          filteredItems = filteredItems.sort(compareValues(sortValue, sortOrder));
+        }
+
+        console.log('list', sortValue, sortOrder, filteredItems);
+        
+
         filteredItems.forEach((item) => {
             var template = $("#car-template").clone().removeClass('invisible').removeAttr('id');
             template.find('.brand').first().text(item.brand);
@@ -840,6 +868,23 @@ String.prototype.removeAccents = function(){
     $("#brand-select").change(() => {
       updateSelectedBrand($("#brand-select").val().normalize());
     });
+
+    $("#sort-select").change(() => {
+      var sorting = $("#sort-select").val();
+      
+      if(sorting) {
+        var props = sorting.split('_');
+        sortValue = props[0];
+        sortOrder = props[1]; 
+      } else {
+        sortValue = '';
+        sortOrder = '';
+      }
+
+      setCars();
+    });
+
+    
 
     function updateSelectedCategory(value) {
         selectedCategory = value;
@@ -867,6 +912,30 @@ String.prototype.removeAccents = function(){
 
     function onlyUnique(value, index, self) { 
         return self.indexOf(value) === index;
+    }
+
+    function compareValues(key, order = 'asc') {
+      return function innerSort(a, b) {
+        if (!a.hasOwnProperty(key) || !b.hasOwnProperty(key)) {
+          // property doesn't exist on either object
+          return 0;
+        }
+
+        const varA = (typeof a[key] === 'string')
+          ? a[key].toUpperCase() : a[key];
+        const varB = (typeof b[key] === 'string')
+          ? b[key].toUpperCase() : b[key];
+
+        let comparison = 0;
+        if (varA > varB) {
+          comparison = 1;
+        } else if (varA < varB) {
+          comparison = -1;
+        }
+        return (
+          (order === 'desc') ? (comparison * -1) : comparison
+        );
+      };
     }
 
 </script>
