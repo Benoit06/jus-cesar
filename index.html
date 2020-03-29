@@ -682,7 +682,7 @@
                     <div class="form-group">
                       <label for="category-select">Catégorie</label>
                       <select id="category-select" class="custom-select">
-                        <option value="">Tous</option>
+                        
                       </select>
                     </div>
                   </div>
@@ -733,8 +733,8 @@
                     <div>Prix: <span class="price"></span></div>
                 </div> -->
 
-                <div class="col-lg-6 container-fluid col-md-6 col-sm-6 bg-light portfolio-item invisible border rounded-sm mx-auto mt-3" id="car-template"> 
-                  <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 bg-light portfolio-item invisible mt-3" id="car-template"> 
+                  <div class="car-wrapper row border rounded-sm">
                     <div class="row full_name col-md-12 mx-auto d-flex justify-content-center align-items-center"></div>
                     <div class="row m-0 px-2">
                       <a class="portfolio-link col-lg-6 d-flex align-items-center justify-content-center">
@@ -893,6 +893,11 @@ String.prototype.removeAccents = function(){
         $('.portfolio-item').each((index, elem) => {
           var category = $(elem).find('h4').first().text();
           var value = category;
+
+          if(category.includes('location')) {
+           return;
+          }
+
           if(value == 'Tous nos véhicules') {
             value = '';
           }
@@ -928,14 +933,17 @@ String.prototype.removeAccents = function(){
 
         filteredItems = filteredItems.filter((item) => item.priceInt >= priceRange[0] && item.priceInt <= priceRange[1]);
 
-        filteredItems.forEach((item) => {
+        filteredItems.forEach((item, index) => {
+          var isItemOdd = isOdd(index);
             var template = $("#car-template").clone().removeClass('invisible').removeAttr('id');
+            template.find('.car-wrapper').first().addClass(isItemOdd ? 'ml-0' : 'mr-0');
+            template.addClass(isItemOdd ? 'pl-2' : 'pr-2');
             template.find('.full_name').first().text(item.full_name);
             template.find('.brand').first().text(item.brand);
             template.find('.name').first().text(item.name);
             template.find('.price').first().text(item.price);
-            template.find('.front_picture').first().attr('src', 'img/cars/'+selectedCategory+'/'+item.front_picture+'.jpg').attr('alt', item.front_picture);
-            template.find('.back_picture').first().attr('src', 'img/cars/'+selectedCategory+'/'+item.back_picture+'.jpg').attr('alt', item.back_picture);
+            template.find('.front_picture').first().attr('src', 'img/cars/'+item.category+'/'+item.front_picture+'.jpg').attr('alt', item.front_picture);
+            template.find('.back_picture').first().attr('src', 'img/cars/'+item.category+'/'+item.back_picture+'.jpg').attr('alt', item.back_picture);
             $("#cars").append(template);
         });
     }
@@ -1073,6 +1081,8 @@ String.prototype.removeAccents = function(){
     function getMax(data, property) {
       return data.reduce((max, p) => p[property] > max ? p[property] : max, data[0][property]);
     }
+
+    function isOdd(num) { return num % 2;}
 
 </script>
 
