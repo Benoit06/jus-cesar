@@ -966,7 +966,11 @@ String.prototype.removeAccents = function(){
       var $el = $(event.currentTarget);
       selectedBrand = '';
       resetPriceRange();
-      updateSelectedCategory($el.find('h4').first().text().normalize());
+      var categorySelected = $el.find('h4').first().text().normalize();
+      if(categorySelected == 'Tous nos véhicules') {
+        categorySelected = '';
+      }
+      updateSelectedCategory(categorySelected);
     });
 
     $("#category-select").change(() => {
