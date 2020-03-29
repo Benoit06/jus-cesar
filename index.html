@@ -146,7 +146,7 @@
           </div>
         </div>
         <div class="col-md-3 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+          <a class="portfolio-link" data-toggle="modal" href="#modalLocation">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
                 <i class="fas fa-plus fa-3x"></i>
@@ -663,7 +663,7 @@
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog bg-light">
       <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
           <div class="lr">
@@ -672,10 +672,10 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
+            <div class="col-lg-12 bg-light">
+              <div class="modal-body bg-light">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Variable Catégorie</h2>
+                <h2 class="text-uppercase bg-dark rounded-sm"><span style="color :blue; text-shadow: 0 0 0.09em blue">Premium </span><span style="color: white; text-shadow: 0 0 0.09em white">Deluxe </span><span style="color: red; text-shadow: 0 0 0.09em red">Motorsport</span></h2>
 
                 <div class="row d-flex flex-nowrap">
                   <div class="flex-grow-1 mr-2">
@@ -704,7 +704,7 @@
                         <option value="priceInt_desc">Prix décroissant</option>
                         <option value="name_asc">Nom a-z</option>
                         <option value="name_desc">Nom z-a</option>
-                        <option value="brand_asc">Marque a-z</option>
+                        <option value="brand_asc" selected>Marque a-z</option>
                         <option value="brand_desc">Marque z-a</option>
                       </select>
                     </div>
@@ -726,11 +726,33 @@
                     
                 </div>
         
-                <div id="car-template" class="col-4 invisible">
+                <!-- <div class="col-4 invisible">
                     <img class="front_picture img-fluid" src="" alt="">
                     <h1 class="h4 brand"></h1>
                     <h2 class="h5 name"></h2>
                     <div>Prix: <span class="price"></span></div>
+                </div> -->
+
+                <div class="col-lg-6 container-fluid col-md-6 col-sm-6 bg-light portfolio-item invisible border rounded-sm mx-auto mt-3" id="car-template"> 
+                  <div class="row">
+                    <div class="row full_name col-md-12 mx-auto d-flex justify-content-center align-items-center"></div>
+                    <div class="row m-0 px-2">
+                      <a class="portfolio-link col-lg-6 d-flex align-items-center justify-content-center">
+                        <img class="img-fluid front_picture mb-0" src="" alt="">
+                      </a>
+                      <a class="portfolio-link col-lg-6 d-flex align-items-center justify-content-center">
+                        <img class="img-fluid back_picture mb-0" src="" alt="">
+                      </a>
+                    </div>
+                    <div class="row portfolio-caption price mx-auto d-flex justify-content-center align-items-center"></div>
+                  </div>
+                  <!-- <div class="row portfolio-caption"> -->
+                    <!-- <div class="row portfolio-caption price mx-auto d-flex justify-content-center align-items-center"> -->
+                      <!-- <div class="row">
+                        <h5 class="col-md-12"><span class="price"></span></h5>
+                      </div> -->
+                    <!-- </div> -->
+                  <!-- </div> -->
                 </div>
 
 
@@ -743,7 +765,7 @@
                 </ul> -->
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Fermer</button>
               </div>
             </div>
           </div>
@@ -751,6 +773,49 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+<!-- Modal Location -->
+
+<div class="portfolio-modal modal fade" id="modalLocation" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog bg-light">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 bg-light">
+            <div class="modal-body bg-light">
+              <!-- Project Details Go Here -->
+              <h2 class="text-uppercase bg-dark rounded-sm"><span style="color :blue; text-shadow: 0 0 0.09em blue">Premium </span><span style="color: white; text-shadow: 0 0 0.09em white">Deluxe </span><span style="color: red; text-shadow: 0 0 0.09em red">Motorsport</span></h2>
+      
+      <button class="btn btn-primary" data-dismiss="modal" type="button">
+        <i class="fas fa-times"></i>
+        Fermer
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -794,7 +859,7 @@ String.prototype.removeAccents = function(){
         
     var selectedCategory = '';
     var selectedBrand = '';
-    var sortValue = 'priceInt';
+    var sortValue = 'brand';
     var sortOrder = 'asc';
     var priceRange = null;
 
@@ -805,7 +870,7 @@ String.prototype.removeAccents = function(){
     var priceSlider = null;
 
     $.ajax({
-        url: "liste.csv",
+        url: "liste.csv",   
         async: false,
         success: function (csvd) {
             items = $.csv.toObjects(csvd);
@@ -865,10 +930,12 @@ String.prototype.removeAccents = function(){
 
         filteredItems.forEach((item) => {
             var template = $("#car-template").clone().removeClass('invisible').removeAttr('id');
+            template.find('.full_name').first().text(item.full_name);
             template.find('.brand').first().text(item.brand);
             template.find('.name').first().text(item.name);
             template.find('.price').first().text(item.price);
             template.find('.front_picture').first().attr('src', 'img/cars/'+selectedCategory+'/'+item.front_picture+'.jpg').attr('alt', item.front_picture);
+            template.find('.back_picture').first().attr('src', 'img/cars/'+selectedCategory+'/'+item.back_picture+'.jpg').attr('alt', item.back_picture);
             $("#cars").append(template);
         });
     }
