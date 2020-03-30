@@ -1,4 +1,4 @@
-Karin,name,full_name,original_price,price,category,front_picture,back_picture,max_speed
+brand,name,full_name,original_price,price,category,front_picture,back_picture,max_speed
 Audi,RS3,Audi RS3,$100 000,$120 000,Importations,AudiRS3 Avant,AudiRS3 Arriere,N/A
 BMW,e65,BMW e65,$50 000,$60 000,Importations,BMWE65 Avant,BMWE65 Arriere,N/A
 Bugatti,Chiron,Bugatti Chiron,$1 000 000,$1 200 000,Importations,BugattiChiron Avant,BugattiChiron Arriere,N/A
