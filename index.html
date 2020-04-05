@@ -1172,6 +1172,8 @@ String.prototype.removeAccents = function(){
               
               item.priceInt = parseInt(item.price.replace(/\D+/g, ''));
             })
+
+            console.log('items', items);
         },
         dataType: "text",
         complete: function () {
@@ -1205,18 +1207,23 @@ String.prototype.removeAccents = function(){
     function setCars() {
         $("#cars div").remove();
 
-        filteredItems = items.filter((item) => {
-          var pass = true;
+        console.log('filter?', selectedCategory, selectedBrand, sortValue, sortOrder);
+        
 
+        filteredItems = items.filter((item) => {
           if(selectedCategory && selectedCategory != 'all') {
-            pass = (item.category == selectedCategory);
+            if(item.category != selectedCategory) {
+              return false;
+            }
           }
 
           if(selectedBrand) {
-            pass = (item.brand == selectedBrand);
+            if(item.brand != selectedBrand) {
+              return false;
+            }
           }
 
-          return pass;
+          return true;
         })
 
         if(sortValue && sortOrder) {
